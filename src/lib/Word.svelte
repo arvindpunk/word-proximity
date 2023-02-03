@@ -1,7 +1,7 @@
 <script lang="ts">
     import Letter from "./Letter.svelte";
 
-    let word: string = "APPLE";
+    export let word: string = "";
     const push = (letter: string) => {
         word += letter;
     };

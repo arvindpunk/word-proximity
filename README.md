@@ -23,6 +23,7 @@ A variant of wordle, with a different set of hints each attempt. The goal is the
         attempt = "CARET" (price = 47)
         delta = "higher"
         ```
+    3. |a - b|
 2. `letter_delta` - If one letter is `higher/lower/equal` than other, can be visually depicted by green or red as in the stock market.
 
 ---
