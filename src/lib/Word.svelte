@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Letter from "./Letter.svelte";
+    import Letter from "$lib/Letter.svelte";
     import { targetWord } from "$stores/game";
 
     export let word: string = "";

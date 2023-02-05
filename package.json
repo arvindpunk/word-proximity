@@ -25,6 +25,9 @@
   },
   "dependencies": {
     "@capacitor/android": "^4.6.2",
-    "@capacitor/core": "^4.6.2"
+    "@capacitor/core": "^4.6.2",
+    "@capacitor/preferences": "^4.0.2",
+    "@capacitor/toast": "^4.1.0",
+    "axios": "^1.3.2"
   }
 }

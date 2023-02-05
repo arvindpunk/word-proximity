@@ -1,7 +1,17 @@
 <script lang="ts">
-  import { attemptedWords, currentWord, currentIndex } from "$stores/game";
+  import {
+    attemptedWords,
+    currentWord,
+    currentIndex,
+    targetWord,
+    isSolved,
+    set,
+    saveToPreferences,
+  } from "$stores/game";
   import { KeyCode, isValidKeyCode } from "$utils/keycodes";
   import { isValidWord } from "$utils/words";
+
+  import { Toast } from "@capacitor/toast";
   export let key: string = "";
 
   const handlePress = (letter: string) => {
@@ -17,10 +27,15 @@
       if ($currentWord.length === 5 && $currentIndex < 6) {
         if (isValidWord($currentWord)) {
           $attemptedWords[$currentIndex] = $currentWord;
+          if ($currentWord === $targetWord) {
+            $isSolved = true;
+          }
           $currentIndex = $currentIndex + 1;
           $currentWord = "";
+          saveToPreferences();
         } else {
           // TODO: invalid word feedback via animation/spring
+          Toast.show({ text: "Invalid Word", duration: "short" });
         }
       }
       return;

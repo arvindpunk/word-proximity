@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Key from "./Key.svelte";
+  import Key from "$lib/Key.svelte";
 
   const rows: string[][] = [
     ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
