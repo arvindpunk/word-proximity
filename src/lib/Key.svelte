@@ -1,7 +1,7 @@
 <script lang="ts">
   import { attemptedWords, currentWord, currentIndex } from "$stores/game";
   import { KeyCode, isValidKeyCode } from "$utils/keycodes";
-
+  import { isValidWord } from "$utils/words";
   export let key: string = "";
 
   const handlePress = (letter: string) => {
@@ -14,10 +14,11 @@
     }
 
     if (pressedKey === KeyCode.Enter) {
+      console.log($currentWord, isValidWord($currentWord));
       if (
         $currentWord.length === 5 &&
         $currentIndex < 6 &&
-        validate($currentWord)
+        isValidWord($currentWord)
       ) {
         $attemptedWords[$currentIndex] = $currentWord;
         $currentIndex = $currentIndex + 1;
@@ -29,11 +30,6 @@
     if ($currentWord.length < 5) {
       $currentWord = $currentWord + pressedKey;
     }
-  };
-
-  const validate = (word: string): boolean => {
-    // TODO: do actual validation here
-    return true;
   };
 </script>
 

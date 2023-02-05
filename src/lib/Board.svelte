@@ -9,9 +9,9 @@
 <div class="flex flex-col max-w-7xl mx-auto mb-4">
     {#each [...$attemptedWords] as word, index}
         {#if index === $currentIndex}
-            <Word word={$currentWord} />
+            <Word word={$currentWord} validate={false} />
         {:else}
-            <Word {word} />
+            <Word {word} validate={index < $currentIndex} />
         {/if}
     {/each}
 </div>

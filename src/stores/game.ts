@@ -10,4 +10,4 @@ export const attemptedWords = writable<string[]>([
     "",
     "",
 ]);
-export const targetWord = writable<string>("SMILE")
+export const targetWord = writable<string>("HEART")
