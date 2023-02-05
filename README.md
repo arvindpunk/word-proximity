@@ -1,4 +1,4 @@
-### Word Street Bets
+### Word Proximity
 
 A variant of wordle, with a different set of hints each attempt. The goal is the same, guess the 5-letter word.
 

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">wordstreetbets</string>
-    <string name="title_activity_main">wordstreetbets</string>
+    <string name="app_name">Word Proximity</string>
+    <string name="title_activity_main">Word Proximity</string>
     <string name="package_name">com.arvindpunk.android_01</string>
     <string name="custom_url_scheme">com.arvindpunk.android_01</string>
 </resources>

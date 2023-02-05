@@ -14,15 +14,14 @@
     }
 
     if (pressedKey === KeyCode.Enter) {
-      console.log($currentWord, isValidWord($currentWord));
-      if (
-        $currentWord.length === 5 &&
-        $currentIndex < 6 &&
-        isValidWord($currentWord)
-      ) {
-        $attemptedWords[$currentIndex] = $currentWord;
-        $currentIndex = $currentIndex + 1;
-        $currentWord = "";
+      if ($currentWord.length === 5 && $currentIndex < 6) {
+        if (isValidWord($currentWord)) {
+          $attemptedWords[$currentIndex] = $currentWord;
+          $currentIndex = $currentIndex + 1;
+          $currentWord = "";
+        } else {
+          // TODO: invalid word feedback via animation/spring
+        }
       }
       return;
     }
