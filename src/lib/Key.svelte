@@ -25,7 +25,7 @@
 
     if (pressedKey === KeyCode.Enter) {
       if ($currentWord.length === 5 && $currentIndex < 6) {
-        if (isValidWord($currentWord)) {
+        if (isValidWord($currentWord) && !$isSolved) {
           $attemptedWords[$currentIndex] = $currentWord;
           if ($currentWord === $targetWord) {
             $isSolved = true;

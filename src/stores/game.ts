@@ -43,6 +43,7 @@ export const loadFromPreferences = async () => {
         const config: Config = JSON.parse(pref.value);
         console.log(config);
         set(config);
+        return
     }
     set(DEFAULT_CONFIG);
 }

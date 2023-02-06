@@ -26,17 +26,16 @@ const getDefaultErrorResponse = <Data>(): ResponseStructure<Data> => {
     }
 }
 
-export interface TargetWordResponse {
-    targetWord: string,
-    vesrion: number
+export interface ResponseTargetWord {
+    targetWord: string
 }
 
-export const GetTargetWord = async (): Promise<ResponseStructure<TargetWordResponse>> => {
+export const GetTargetWord = async (): Promise<ResponseStructure<ResponseTargetWord>> => {
     const data = await client
-        .get<ResponseStructure<TargetWordResponse>>("/get-target-word")
+        .get<ResponseStructure<ResponseTargetWord>>("/v1/get-target-word")
         .then((resp) => resp.data)
         .catch(() => {
-            return getDefaultErrorResponse<TargetWordResponse>();
+            return getDefaultErrorResponse<ResponseTargetWord>();
         })
     return data;
 }

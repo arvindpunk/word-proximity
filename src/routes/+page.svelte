@@ -21,14 +21,15 @@
             Toast.show({ text: targetWordResp.error, duration: "short" });
             return;
         }
-        loading = false;
         await loadFromPreferences();
         const newTargetWord = targetWordResp.data.targetWord;
         if ($targetWord === newTargetWord) {
+            loading = false;
+
             return;
         }
-        set(DEFAULT_CONFIG);
         $targetWord = newTargetWord;
+        loading = false;
     });
 </script>
 
