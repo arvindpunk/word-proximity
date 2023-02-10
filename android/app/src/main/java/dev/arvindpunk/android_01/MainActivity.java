@@ -1,4 +1,4 @@
-package com.arvindpunk.android_01;
+package dev.arvindpunk.android_01;
 
 import com.getcapacitor.BridgeActivity;
 

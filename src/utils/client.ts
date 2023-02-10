@@ -12,7 +12,6 @@ export interface ResponseStructure<Data> {
     data: Data;
     version: string;
     error: string;
-    errorCode: string;
     code: ResponseCode.Success | ResponseCode.Error;
 }
 
@@ -21,7 +20,6 @@ const getDefaultErrorResponse = <Data>(): ResponseStructure<Data> => {
         data: {} as Data,
         version: "",
         error: "Uh oh! Something unexpected happened!",
-        errorCode: "AXIOS_ERROR",
         code: ResponseCode.Error,
     }
 }

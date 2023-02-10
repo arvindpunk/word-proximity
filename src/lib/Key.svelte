@@ -7,6 +7,7 @@
     isSolved,
     set,
     saveToPreferences,
+    state,
   } from "$stores/game";
   import { KeyCode, isValidKeyCode } from "$utils/keycodes";
   import { isValidWord } from "$utils/words";
@@ -28,9 +29,13 @@
         if (isValidWord($currentWord) && !$isSolved) {
           $attemptedWords[$currentIndex] = $currentWord;
           if ($currentWord === $targetWord) {
+            $state = "solved";
             $isSolved = true;
           }
           $currentIndex = $currentIndex + 1;
+          if ($currentIndex === 6) {
+            $state = "unsolved";
+          }
           $currentWord = "";
           saveToPreferences();
         } else {

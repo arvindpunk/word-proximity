@@ -8,7 +8,7 @@ export const currentIndex = writable<number>(0);
 export const attemptedWords = writable<string[]>(["", "", "", "", "", "",]);
 export const targetWord = writable<string>("HEART")
 export const isSolved = writable<boolean>(false);
-
+export const state = writable<string>("loading");
 export interface Config {
     currentWord: string;
     currentIndex: number;

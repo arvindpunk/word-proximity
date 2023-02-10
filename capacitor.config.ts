@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.arvindpunk.android_01',
-  appName: 'Word Proximity',
+  appId: 'dev.arvindpunk.android_01',
+  appName: 'Word Edit',
   webDir: 'dist',
   bundledWebRuntime: false
 };

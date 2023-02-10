@@ -4,7 +4,7 @@
 2. `yarn add @capacitor/core @capacitor/android`
 3. `yarn add -D @capacitor/cli`
 4. `npx cap init`
-5. Choose packageId as `com.arvindpunk.android_0x`, incrementing X as required  
+5. Choose packageId as `dev.arvindpunk.android_0x`, incrementing X as required  
 > NOTE: Package/Application ID CANNOT be changed once published.
 6. `npx cap add android`
 7. Use `npx cap sync` to update native code.
