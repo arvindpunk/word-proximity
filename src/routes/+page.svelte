@@ -53,7 +53,7 @@
     </div>
     <div class="flex flex-col max-w-7xl m-auto min-h-screen justify-center">
         {#if $state === "error"}
-            <div class="flex flex-col text-xl" in:blur>
+            <div class="mx-auto flex flex-col text-xl text-center" in:blur>
                 <h1>
                     Uh oh! Something went wrong.
                     <br />
