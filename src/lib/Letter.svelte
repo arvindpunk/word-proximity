@@ -9,10 +9,10 @@
             letter.charCodeAt(0) - targetLetter.charCodeAt(0)
         );
         if (manhattanDistance === 0) return "bg-green-500";
-        else if (manhattanDistance <= 2) return "bg-yellow-400/100";
-        else if (manhattanDistance <= 5) return "bg-yellow-400/75";
-        else if (manhattanDistance <= 10) return "bg-yellow-400/50";
-        else if (manhattanDistance <= 15) return "bg-yellow-400/25";
+        else if (manhattanDistance <= 1) return "bg-yellow-400/100";
+        else if (manhattanDistance <= 3) return "bg-yellow-400/75";
+        else if (manhattanDistance <= 5) return "bg-yellow-400/50";
+        else if (manhattanDistance <= 7) return "bg-yellow-400/25";
         else return "bg-neutral-700";
     }
 

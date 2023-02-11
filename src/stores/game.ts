@@ -38,10 +38,8 @@ export const set = (config: Config) => {
 
 export const loadFromPreferences = async () => {
     const pref = await Preferences.get({ key: CONFIG_KEY });
-    console.log(pref.value);
     if (pref.value) {
         const config: Config = JSON.parse(pref.value);
-        console.log(config);
         set(config);
         return
     }

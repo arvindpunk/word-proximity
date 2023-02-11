@@ -3,7 +3,6 @@
     import { attemptedWords } from "$stores/game";
 
     import Word from "$lib/Word.svelte";
-    $: console.log($currentIndex);
 </script>
 
 <div class="flex flex-col max-w-7xl mx-auto mb-4">

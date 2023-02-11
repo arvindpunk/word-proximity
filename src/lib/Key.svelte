@@ -14,6 +14,7 @@
 
   import { Toast } from "@capacitor/toast";
   export let key: string = "";
+  export let disable: boolean = false;
 
   const handlePress = (letter: string) => {
     const pressedKey = letter.toUpperCase();
@@ -33,7 +34,7 @@
             $isSolved = true;
           }
           $currentIndex = $currentIndex + 1;
-          if ($currentIndex === 6) {
+          if ($currentIndex === 6 && !$isSolved) {
             $state = "unsolved";
           }
           $currentWord = "";
@@ -53,7 +54,9 @@
 </script>
 
 <button
-  class="flex bg-neutral-500 min-w-min p-1 w-6 h-12 m-1 rounded-sm text-xs"
+  class="flex {disable
+    ? 'bg-neutral-600'
+    : 'bg-neutral-500'} min-w-min p-1 w-6 h-12 m-1 rounded-sm text-xs"
   on:click={() => handlePress(key)}
   on:keydown|preventDefault={(event) => handlePress(event.key)}
 >
