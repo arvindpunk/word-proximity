@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "android:dev:build": "cd android && ./gradlew assembleDebug && cd .."
+    "android:dev:build": "cd android && ./gradlew assembleDebug && cd ..",
+    "android:generate:icons": "capacitor-assets generate --iconBackgroundColor '#4d4d4d' --iconBackgroundColorDark '#4d4d4d' --splashBackgroundColor '#4d4d4d' --splashBackgroundColorDark '#4d4d4d' --android && cp ./assets/logo.svg ./public/logo.svg"
   },
   "devDependencies": {
     "@capacitor/cli": "^4.6.2",
@@ -25,6 +26,7 @@
   },
   "dependencies": {
     "@capacitor/android": "^4.6.2",
+    "@capacitor/assets": "^2.0.4",
     "@capacitor/core": "^4.6.2",
     "@capacitor/preferences": "^4.0.2",
     "@capacitor/toast": "^4.1.0",

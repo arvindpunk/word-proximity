@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0053333"
+     inkscape:cx="303.38197"
+     inkscape:cy="282.49338"
+     inkscape:window-width="1920"
+     inkscape:window-height="1061"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid234"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#4d4d4d;fill-opacity:1;stroke:#4d4d4d;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect236"
+       width="135.46667"
+       height="135.46667"
+       x="-4.0763362e-06"
+       y="5.1728745e-07" />
+    <rect
+       style="fill:#00b903;fill-opacity:1;stroke:#00b903;stroke-width:1.5;stroke-linecap:round;stroke-opacity:1;stroke-linejoin:round;paint-order:markers stroke fill;stroke-dasharray:none"
+       id="rect236-3-6"
+       width="58.057144"
+       height="58.057144"
+       x="6.4507933"
+       y="6.4507933" />
+    <rect
+       style="fill:#efc000;fill-opacity:1;stroke:#efc000;stroke-width:1.5;stroke-linecap:round;stroke-opacity:1;stroke-linejoin:round;paint-order:markers stroke fill;stroke-dasharray:none"
+       id="rect236-3-6-2"
+       width="58.057144"
+       height="58.057144"
+       x="70.958725"
+       y="6.4507933" />
+    <rect
+       style="fill:#806600;stroke:#806600;stroke-width:1.5;stroke-linecap:round;stroke-opacity:1;stroke-linejoin:round;paint-order:markers stroke fill;stroke-dasharray:none"
+       id="rect236-3-6-2-8"
+       width="58.057144"
+       height="58.057144"
+       x="6.4507933"
+       y="70.958466" />
+    <rect
+       style="fill:#3a3a3a;fill-opacity:1;stroke:#6f6f6f;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill;stroke-linejoin:round"
+       id="rect236-3-6-1"
+       width="58.057144"
+       height="58.057144"
+       x="70.958725"
+       y="70.958466" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2778px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f6f6f6;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="18.787867"
+       y="48.105648"
+       id="text1806"><tspan
+         id="tspan1804"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2778px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f6f6f6;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+         x="18.787867"
+         y="48.105648"
+         sodipodi:role="line">W</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2778px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f6f6f6;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       x="87.81749"
+       y="48.105648"
+       id="text1806-6"><tspan
+         sodipodi:role="line"
+         id="tspan1885"
+         x="87.81749"
+         y="48.105648"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2778px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0">E</tspan></text>
+  </g>
+</svg>
