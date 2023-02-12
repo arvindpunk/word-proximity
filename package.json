@@ -8,8 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "android:dev:build": "yarn build && npx cap sync android && cd android && ./gradlew clean && ./gradlew assembleDebug && cd ..",
-    "android:prod:build": "yarn build && npx cap sync android && cd android && ./gradlew clean && ./gradlew assembleRelease && cd ..",
+    "android:apk:build": "yarn build && npx cap sync android && cd android && ./gradlew clean && ./gradlew assembleDebug && cd ..",
+    "android:aab:build": "yarn build && npx cap sync android && cd android && ./gradlew clean && ./gradlew bundleRelease && cd ..",
     "android:generate:icons": "capacitor-assets generate --iconBackgroundColor '#242424' --iconBackgroundColorDark '#242424' --splashBackgroundColor '#242424' --splashBackgroundColorDark '#242424' --android && cp ./assets/logo.svg ./public/logo.svg"
   },
   "devDependencies": {
