@@ -19,7 +19,7 @@ const getDefaultErrorResponse = <Data>(): ResponseStructure<Data> => {
     return {
         data: {} as Data,
         version: "",
-        error: "Uh oh! Something unexpected happened!",
+        error: `Uh oh! Something unexpected happened!`,
         code: ResponseCode.Error,
     }
 }
@@ -32,7 +32,7 @@ export const GetTargetWord = async (): Promise<ResponseStructure<ResponseTargetW
     const data = await client
         .get<ResponseStructure<ResponseTargetWord>>("/v1/get-target-word")
         .then((resp) => resp.data)
-        .catch(() => {
+        .catch((_: Error) => {
             return getDefaultErrorResponse<ResponseTargetWord>();
         })
     return data;

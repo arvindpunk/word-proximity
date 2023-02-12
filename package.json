@@ -1,15 +1,16 @@
 {
   "name": "word-proximity",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "android:dev:build": "cd android && ./gradlew assembleDebug && cd ..",
-    "android:generate:icons": "capacitor-assets generate --iconBackgroundColor '#4d4d4d' --iconBackgroundColorDark '#4d4d4d' --splashBackgroundColor '#4d4d4d' --splashBackgroundColorDark '#4d4d4d' --android && cp ./assets/logo.svg ./public/logo.svg"
+    "android:dev:build": "yarn build && npx cap sync android && cd android && ./gradlew clean && ./gradlew assembleDebug && cd ..",
+    "android:prod:build": "yarn build && npx cap sync android && cd android && ./gradlew clean && ./gradlew assembleRelease && cd ..",
+    "android:generate:icons": "capacitor-assets generate --iconBackgroundColor '#242424' --iconBackgroundColorDark '#242424' --splashBackgroundColor '#242424' --splashBackgroundColorDark '#242424' --android && cp ./assets/logo.svg ./public/logo.svg"
   },
   "devDependencies": {
     "@capacitor/cli": "^4.6.2",

@@ -4,7 +4,10 @@ const config: CapacitorConfig = {
   appId: 'dev.arvindpunk.android_01',
   appName: 'Word Edit',
   webDir: 'dist',
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
+  server: {
+    androidScheme: 'https'
+  }
 };
 
 export default config;
